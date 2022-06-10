@@ -20,10 +20,22 @@ html {
 }
 
 body {
+  height: 100vh;
   font-family: 'Montserrat', sans-serif;
   background-color: var(--very-light-grayish-blue);
   background-image: url('../assets//bg-top.svg');
-  background-position: right;
+  background-position: top right;
   background-size: 50%;
   background-repeat: no-repeat;
+}
+
+@media (min-width: 1024px) {
+  body {
+    background-size: 40%;
+  }
+  body::before {
+    content: url('../assets//bg-bottom.svg');
+    position: absolute;
+    bottom: 0;
+  }
 }

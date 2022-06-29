@@ -79,6 +79,10 @@ const BasicCard = styled.div `
     margin-top: 80px;
     display: inline-flex;
   }
+
+  :hover {
+    transform: scale(1.04);
+  }
 `
 
 const CardTitle = styled.h1 `
